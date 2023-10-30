@@ -26,3 +26,44 @@
   height: 100vh;
   text-align: center;
 }
+
+.grid-one-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100vh;
+}
+
+.grid-one-content h2 {
+  margin-bottom: 1rem;
+}
+
+.grid-description {
+  padding-bottom: 5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+  gap: var(--gap);
+  counter-reset: grid-counter;
+}
+
+.grid h3 {
+  font-size: 3rem;
+  position: relative;
+  padding-left: 8rem;
+  padding-bottom: 3rem;
+}
+
+.grid h3::before {
+  counter-increment: grid-counter;
+  content: counter(grid-counter);
+  position: absolute;
+  font-size: 8rem;
+  font-style: italic;
+  top: -3rem;
+  left: 0;
+  transform: rotate(5deg);
+  
+}
