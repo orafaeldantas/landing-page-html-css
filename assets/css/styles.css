@@ -164,6 +164,23 @@ body .full-width {
   display: none;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--white-color);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: var(--primary-color);
+  font-size: 3.7rem;
+  border: 0.1rem solid var(--primary-color)
+  
+}
+
 @media (max-width: 800px) {
   .intro-content, .grid {
     display: block;
